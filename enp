@@ -1,0 +1,5 @@
+#!/bin/bash
+
+filename="$1";
+
+/usr/bin/php -r "echo base64_encode(file_get_contents('${filename}'));" | pbcopy
